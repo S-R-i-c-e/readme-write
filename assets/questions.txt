@@ -1,0 +1,42 @@
+[
+        {
+            type: 'input',
+            name: 'title',
+            message: "What's the title of the project?",
+        },
+        {
+            type: 'input',
+            name: 'description',
+            message: "Describe the project:",
+        },
+        {
+            type: 'input',
+            name: 'installation',
+            message: "How is the project installed?",
+        },
+        {
+            type: 'input',
+            name: 'usage',
+            message: "Provide instructions for the project:",
+        },
+        {
+            type: 'input',
+            name: 'licence',
+            message: "Select a licence.",
+        },
+        {
+            type: 'input',
+            name: 'contributors',
+            message: "List the contributors to the Meproject:",
+        },
+        {
+            type: 'input',
+            name: 'tests',
+            message: "Enter testing information",
+        },
+        {
+            type: 'input',
+            name: 'questions',
+            message: "GitHub link:",
+        },
+    ]
