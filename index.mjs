@@ -1,74 +1,19 @@
 import inquirer from 'inquirer';
-//import fs from "fs";
+
 import fs from "fs/promises"
 
-// let questionsText = await fs.readFile('./assets/questions.txt', { encoding: "utf8", flag: "r" });
-// //let questionsArray = removeWhiteSpace(questionsText);
+let questionsTxt;
 
-// let questionsArray =  JSON.parse(removeWhiteSpace(questionsText));
-// console.log(questionsArray);
+try {
+    questionsTxt = await fs.readFile('./assets/questions.txt', 'utf-8');
+} catch (error) {
+    console.error('there was an error reading questions.txt:', error.message);
+}
+
+let questions = JSON.parse(questionsTxt);
 
 let {title, description, installation, usage, licence, contributors, tests, githubUser, repository, hasWebpage, email} = await inquirer
-    .prompt([
-        {
-            type: 'input',
-            name: 'title',
-            message: "What's the title of the project?",
-        },
-        {
-            type: 'input',
-            name: 'description',
-            message: "Describe the project:",
-        },
-        {
-            type: 'input',
-            name: 'installation',
-            message: "How is the project installed?",
-        },
-        {
-            type: 'input',
-            name: 'usage',
-            message: "Provide instructions for the project:",
-        },
-        {
-            type: 'list',
-            name: 'licence',
-            message: "Select a licence.",
-            choices: ["MIT",
-                    "Apache 2.0",
-            ]
-        },
-        {
-            type: 'input',
-            name: 'contributors',
-            message: "List the contributors to the Meproject:",
-        },
-        {
-            type: 'input',
-            name: 'tests',
-            message: "Enter testing information",
-        },
-        {
-            type: 'input',
-            name: 'githubUser',
-            message: "Please enter your Github username:",
-        },
-        {
-            type: 'input',
-            name: 'repository',
-            message: "Please enter the name of the repository:",
-        },
-        {
-            type: 'confirm',
-            name: 'hasWebpage',
-            message: "Does the repo have a github webpage?",
-        },
-        {
-            type: 'input',
-            name: 'email',
-            message: "Enter your email address",
-        },
-    ]);
+    .prompt(questions);
 
 let {licenceWords, licenceBadge} = licenceSpiel(licence, contributors);
 let {user, myRepo, myEmail, myWebpage} = githubLinks(githubUser, repository, email, hasWebpage);
