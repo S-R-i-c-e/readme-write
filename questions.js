@@ -10,17 +10,17 @@ export default function questions () {
         "message": "What's the title of the project?",
     },
     {
-        "type": "input",
+        "type": "editor",
         "name": "description",
         "message": "Describe the project:"
     },
     {
-        "type": "input",
+        "type": "editor",
         "name": "installation",
         "message": "How is the project installed?"
     },
     {
-        "type": "input",
+        "type": "editor",
         "name": "usage",
         "message": "Provide instructions for the project:"
     },

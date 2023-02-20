@@ -18,13 +18,12 @@ let {title, description, installation, usage, licence, contributors, tests, gith
 // construct the text based on the answers given.
 let {licenceWords, licenceBadge} = licenceSpiel(licence, contributors);
 let {user, myRepo, myEmail, myWebpage} = links(githubUser, repository, email, hasWebpage);
-
 let readmeDocument =  `
 # ${title}
 
 ${description}
 
-<!-- ${licenceBadge} -->
+${licenceBadge}
 
 ## Table of Contents
 
