@@ -1,9 +1,31 @@
 
-# One More Time
+# Readme-Write
 
-A really good one.
+Use the bash command line to describe a project readme.
 
-<!-- ![Hex.pm](https://img.shields.io/hexpm/l/apa?style=for-the-badge) -->
+Answer the prompts to create the following sections:
+
+* Description 
+* Table of Contents 
+* Installation 
+* Usage 
+ * License 
+ * Contributing 
+ * Tests 
+ * Questions
+
+Featuring the features you love, including:
+
+* When a user enters the project title then it is displayed as the title of the README
+* When a user enters a description, installation instructions, usage information, contribution guidelines, and test instructions then this information is added to the sections of the README entitled Description, Installation, Usage, Contributing, and Tests
+* When a user chooses a license for their application from a list of options then a badge for that license is added near the top of the README and a notice is added to the section of the README entitled **License** that explains which license the application is covered under
+ * When a user enters their GitHub username then this is added to the section of the README entitled Questions, with a link to their GitHub profile
+* When a user enters their email address then this is added to the section of the README entitled Questions, with instructions on how to reach them with additional questions
+ * When a user clicks on the links in the **Table of Contents** then they are taken to the corresponding section of the README.
+
+
+
+![Hex.pm](https://img.shields.io/hexpm/l/apa?style=for-the-badge)
 
 ## Table of Contents
 
@@ -16,15 +38,32 @@ A really good one.
 
 ### [Installation](#installation)
 
-is it?
+To install the code, first install inquirer:
+>npm install inquirer
+
+Then clone this repo.
+
+Finally, run the code:
+>node index.mjs
+
+
 
 ### [Usage](#usage)
 
-Just Believe.
+Answer the prompts.
+
+The description, insatllation and usage sections will prompt you to automatically open your default text editor letting you more easily enter reams of writings. When you are done, save the file and then close the editor.
+
+You will be prompted whether your project has a webpage.
+
+You will be asked for your Github username and the repo name.
+
+You will be asked for your email - the address will be validated.
+
 
 ### [Licence](#licence)
 
-Copyright 2023 Steve
+Copyright 2023 Steve Rice
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -40,16 +79,16 @@ limitations under the License.
 
 ### [Contributors](#contributors)
 
-Steve
+Steve Rice
 
 ### [Tests](#tests)
 
-false
+none.
 
 ### [Questions](#questions)
 
 Any Questions, then please contact me.
-#### GitHub: [@Davey](https://api.github.com/users/Davey)
-#### [email](squish@g.c)
-#### [repo](https://github.com/Davey/Buttocks)
+#### GitHub: [@S-R-i-c-e](https://api.github.com/users/S-R-i-c-e)
+#### [email](goatwipe@gmail.com)
+#### [repo](https://github.com/S-R-i-c-e/readme-write)
 
