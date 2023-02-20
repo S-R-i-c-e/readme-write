@@ -1,3 +1,8 @@
+/*
+ * link.js
+ * links function constructs contact links based on user inputfor readme-writer index.mjs
+ */
+
 export default function links(userName, repos, emailAddress, webpageExists) {
     let linkGit = `#### GitHub: [@${userName}](https://api.github.com/users/${userName})`;
     let linkEmail = `#### [email](${emailAddress})`;

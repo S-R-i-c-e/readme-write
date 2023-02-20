@@ -1,28 +1,23 @@
+/*
+ * index.mjs
+ * based on command line questioning using github.com/SBoudrias/Inquirer.js constructs a readme.md file.
+ */
 import inquirer from 'inquirer';
 import fs from "fs/promises"
 
+// import functions from local files.
 import licenceSpiel from './licences.js';
 import questions from './questions.js';
 import links from './links.js';
 
+// ask away...
 let myQuestions = questions();
-
 let {title, description, installation, usage, licence, contributors, tests, githubUser, repository, hasWebpage, email} = await inquirer
     .prompt(myQuestions);
 
+// construct the text based on the answers given.
 let {licenceWords, licenceBadge} = licenceSpiel(licence, contributors);
 let {user, myRepo, myEmail, myWebpage} = links(githubUser, repository, email, hasWebpage);
-
-// function links(userName, repos, emailAddress, webpageExists) {
-//     let linkGit = `#### GitHub: [@${userName}](https://api.github.com/users/${userName})`;
-//     let linkEmail = `#### [email](${emailAddress})`;
-//     let linkRepo = `#### [repo](https://github.com/${userName}/${repos})`;
-//     let linkWebpage = '';
-//     if (webpageExists) {
-//         linkWebpage = `#### [webpage](https://${userName}.github.io/${repos}/)`;
-//     }
-//     return {user: linkGit, myEmail: linkEmail, myRepo: linkRepo, myWebpage: linkWebpage};
-// }
 
 let readmeDocument =  `
 # ${title}
@@ -68,9 +63,5 @@ ${myEmail}
 ${myRepo}
 ${myWebpage}
 `
-
+// write the README
 await fs.writeFile("README.md", readmeDocument);
-
-function removeWhiteSpace(str) {
-    return str.replace(/[\s\r\n]+/g, "");
-}
