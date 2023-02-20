@@ -1,1 +1,0 @@
-### GitHub: [@S-R-i-c-e](https://api.github.com/users/${S-R-i-c-e})<br><br>
