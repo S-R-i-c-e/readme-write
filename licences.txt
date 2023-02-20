@@ -1,30 +1,4 @@
-
-# 1
-
-2
-
-<!-- undefined -->
-
-## Table of Contents
-
-1. [Installation](#installation)
-2. [Usage](#usage)
-3. [Licence](#licence)
-4. [Contributors](#contributors)
-5. [Tests](#tests)
-6. [Questions](#questions)
-
-### [Installation](#installation)
-
-3
-
-### [Usage](#usage)
-
-4
-
-### [Licence](#licence)
-
-Copyright (c) 2023 5
+[{"MIT":"Copyright (c) <year> <copyright holders>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -60,20 +34,4 @@ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-
-### [Contributors](#contributors)
-
-5
-
-### [Tests](#tests)
-
-false
-
-### [Questions](#questions)
-
-Any Questions, then please contact me.
-#### GitHub: [@1](https://api.github.com/users/1)
-#### [email](45@g.v)
-#### [repo](https://github.com/1/2)
-
+SOFTWARE."}]
