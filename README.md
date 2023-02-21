@@ -50,9 +50,7 @@ Finally, run the code:
 
 ### [Usage](#usage)
 
-<video width="320" height="240" controls>
-  <source src="./assets/readme-writer-use.mp4" type="video/mp4">
-</video>
+![](assets/readme-writer-use.gif)
 
 Answer the prompts.
 
