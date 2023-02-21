@@ -50,6 +50,10 @@ Finally, run the code:
 
 ### [Usage](#usage)
 
+<video width="320" height="240" controls>
+  <source src="./assets/readme-writer-use.mp4" type="video/mp4">
+</video>
+
 Answer the prompts.
 
 The description, insatllation and usage sections will prompt you to automatically open your default text editor letting you more easily enter reams of writings. When you are done, save the file and then close the editor.
